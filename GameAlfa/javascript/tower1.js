@@ -8,9 +8,9 @@ function Tower_1(game){
 	this.interval = null;
 	this.width = 50;
 	this.height = 50;
-	this.reloadInterval = 800;
+	this.reloadInterval = 300;
 	this.lastFired = 0;
-	this.damage = 20;
+	this.damage = 5;
 	this.price = 50;
 	
 }

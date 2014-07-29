@@ -1,152 +1,129 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>DefendTheOrder</title>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DefendTheOrder</title>
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="BKeZovlmP4G6JA15/XACWO6dkcokpUM2s7gRJWqgNNM=" name="csrf-token" />
+    <meta content="BKeZovlmP4G6JA15/XACWO6dkcokpUM2s7gRJWqgNNM=" name="csrf-token" />
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
-    <![endif]-->
+
 
     <link href="css/application.css?body=1" media="all" rel="stylesheet" />
-<link href="css/bootstrap-theme.css.map.css?body=1" media="all" rel="stylesheet" />
-<link href="css/bootstrap-theme.min.css?body=1" media="all" rel="stylesheet" />
-<link href="css/bootstrap.css.map.css?body=1" media="all" rel="stylesheet" />
-<link href="css/bootstrap.min.css?body=1" media="all" rel="stylesheet" />
-<link href="css/password_resets.css?body=1" media="all" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css.map.css?body=1" media="all" rel="stylesheet" />
+    <link href="css/bootstrap-theme.min.css?body=1" media="all" rel="stylesheet" />
+    <link href="css/bootstrap.css.map.css?body=1" media="all" rel="stylesheet" />
+    <link href="css/bootstrap.min.css?body=1" media="all" rel="stylesheet" />
+    <link href="css/password_resets.css?body=1" media="all" rel="stylesheet" />
 
-    <!-- For third-generation iPad with high-resolution Retina display: -->
-    <!-- Size should be 144 x 144 pixels -->
-    <link href="/images/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144" type="image/png" />
-
-    <!-- For iPhone with high-resolution Retina display: -->
-    <!-- Size should be 114 x 114 pixels -->
-    <link href="/images/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114" type="image/png" />
-
-    <!-- For first- and second-generation iPad: -->
-    <!-- Size should be 72 x 72 pixels -->
-    <link href="/images/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72" type="image/png" />
-
-    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-    <!-- Size should be 57 x 57 pixels -->
-    <link href="/images/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed" type="image/png" />
-
-    <!-- For all other devices -->
-    <!-- Size should be 32 x 32 pixels -->
-    <link href="/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
     <script src="javascript/jquery.js?body=1"></script>
-<script src="javascript/jquery_ujs.js?body=1"></script>
-<script src="javascript/assetsLoader.js?body=1"></script>
-<script src="javascript/eventEmitter.js?body=1"></script>
-<script src="javascript/game.js?body=1"></script>
-<script src="javascript/kinetic.js?body=1"></script>
-<script src="javascript/monstersBase.js?body=1"></script>
-<script src="javascript/normalMonster.js?body=1"></script>
-<script src="javascript/password_resets.js?body=1"></script>
-<script src="javascript/player.js?body=1"></script>
-<script src="javascript/speedMonster.js?body=1"></script>
-<script src="javascript/tower.js?body=1"></script>
-<script src="javascript/tower1.js?body=1"></script>
-<script src="javascript/tower2.js?body=1"></script>
-<script src="javascript/tower3.js?body=1"></script>
-<script src="javascript/wave.js?body=1"></script>
-<script src="javascript/zarmoredMonster.js?body=1"></script>
-<script src="javascript/application.js?body=1"></script>
-  </head>
-  <body>
-     <!-- Static navbar -->
-      <div class="navbar navbar-default" role="navigation">
+    <script src="javascript/jquery_ujs.js?body=1"></script>
+    <script src="javascript/assetsLoader.js?body=1"></script>
+    <script src="javascript/eventEmitter.js?body=1"></script>
+    <script src="javascript/game.js?body=1"></script>
+    <script src="javascript/kinetic.js?body=1"></script>
+    <script src="javascript/monstersBase.js?body=1"></script>
+    <script src="javascript/normalMonster.js?body=1"></script>
+    <script src="javascript/password_resets.js?body=1"></script>
+    <script src="javascript/player.js?body=1"></script>
+    <script src="javascript/speedMonster.js?body=1"></script>
+    <script src="javascript/tower.js?body=1"></script>
+    <script src="javascript/tower1.js?body=1"></script>
+    <script src="javascript/tower2.js?body=1"></script>
+    <script src="javascript/tower3.js?body=1"></script>
+    <script src="javascript/wave.js?body=1"></script>
+    <script src="javascript/zarmoredMonster.js?body=1"></script>
+    <script src="javascript/application.js?body=1"></script>
+    <style></style>
+</head>
+<body>
+    <!-- Static navbar -->
+    <div class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-         
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-             
-            </ul>
-          </div><!--/.nav-collapse -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav"></ul>
+            </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
-      </div>
+    </div>
     <div class="container">
         <div class="row">
-          <div class="span9">
-            
-
-
-<div id="game1"></div>
-<div id="towers" >
-
-<div id="towers" >
-	<h3 id="errorMesssage" style="color:red" ></h3>
-	<img id="tower1" src="images/tower1icon.png" width="50" height="50" />
-	<img id="tower2" src="images/tower2icon.png" width="50" height="50" />
-	<img id="tower3" src="images/tower3icon.png" width="50" height="50" />
-
-<br />
-
-
-<span style="font-size:30px; padding-left:5px; background:green;">Gold - </span>
-
-<span id="gold" style="font-size:30px; padding-left:5px; background:green;"></span>
-
-<br />
-
-
-<span style="font-size:30px; padding-left:5px; background:red;">Lifes - </span>
-
-<span id="lifes" style="font-size:30px; padding-left:5px; background:red;">0</span>
-
-</div>
-<br>
+            <div class="span9">
 
 
 
-<br style="clear:both" />
+                <div id="game1"></div>
+                <div id="towers">
+
+                    <div id="towers">
+                        <h3 id="errorMesssage" style="color:red"></h3>
+                        <img id="tower1" src="images/tower1icon.png" width="50" height="50" />
+                        <img id="tower2" src="images/tower2icon.png" width="50" height="50" />
+                        <img id="tower3" src="images/tower3icon.png" width="50" height="50" />
+
+                        <br />
 
 
-<script  >
-	
-	window.onload = function(){
-		var game = new Game();
-		game.init({"backgroundUrl":"images/background1.png","monster1Url":"images/darthvader.png","monster2Url":"images/ironman.png","monster3Url":"images/hulk.png","tower1Url":"images/tower1icon.png","tower2Url":"images/tower2icon.png","tower3Url":"images/tower3icon.png","route":[{"x":1,"y":6},{"x":2,"y":6},{"x":3,"y":6},{"x":3,"y":5},{"x":3,"y":4},{"x":3,"y":3},{"x":4,"y":3},{"x":5,"y":3},{"x":6,"y":3},{"x":7,"y":3},{"x":7,"y":4},{"x":7,"y":5},{"x":7,"y":6},{"x":7,"y":7},{"x":8,"y":7},{"x":9,"y":7},{"x":10,"y":7},{"x":11,"y":7},{"x":11,"y":6},{"x":11,"y":5},{"x":12,"y":5},{"x":13,"y":5},{"x":14,"y":5},{"x":15,"y":5},{"x":16,"y":5},{"x":17,"y":5}],"monsterType":1}, 'game1');
+                        <span style="font-size:30px; padding-left:5px; background:green;">Gold - </span>
 
-		$('#tower1').click(function(){
-			game.clickedTower(1);
-		});
-		$('#tower2').click(function(){
-			game.clickedTower(2);
-		});
-		$('#tower3').click(function(){
-			game.clickedTower(3);
-		});
-	
-	};
-	
-	
-	
+                        <span id="gold" style="font-size:30px; padding-left:5px; background:green;"></span>
 
-</script> 
-          </div>
-        </div><!--/row-->
+                        <br />
 
-      <footer>
-        <p></p>
-      </footer>
 
-    </div> <!-- /container -->
+                        <span style="font-size:30px; padding-left:5px; background:red;">Lifes - </span>
 
-  </body>
+                        <span id="lifes" style="font-size:30px; padding-left:5px; background:red;">0</span>
+
+                    </div>
+                    <br>
+
+
+
+                    <br style="clear:both" />
+
+
+                    <script>
+
+                        window.onload = function () {
+                            var game = new Game();
+                            game.init({ "backgroundUrl": "images/background1.png", "monster1Url": "images/darthvader.png", "monster2Url": "images/ironman.png", "monster3Url": "images/hulk.png", "tower1Url": "images/tower1icon.png", "tower2Url": "images/tower2icon.png", "tower3Url": "images/tower3icon.png", "route": [{ "x": 1, "y": 6 }, { "x": 2, "y": 6 }, { "x": 3, "y": 6 }, { "x": 3, "y": 5 }, { "x": 3, "y": 4 }, { "x": 3, "y": 3 }, { "x": 4, "y": 3 }, { "x": 5, "y": 3 }, { "x": 6, "y": 3 }, { "x": 7, "y": 3 }, { "x": 7, "y": 4 }, { "x": 7, "y": 5 }, { "x": 7, "y": 6 }, { "x": 7, "y": 7 }, { "x": 8, "y": 7 }, { "x": 9, "y": 7 }, { "x": 10, "y": 7 }, { "x": 11, "y": 7 }, { "x": 11, "y": 6 }, { "x": 11, "y": 5 }, { "x": 12, "y": 5 }, { "x": 13, "y": 5 }, { "x": 14, "y": 5 }, { "x": 15, "y": 5 }, { "x": 16, "y": 5 }, { "x": 17, "y": 5 }], "monsterType": 1 }, 'game1');
+
+                            $('#tower1').click(function () {
+                                game.clickedTower(1);
+                            });
+                            $('#tower2').click(function () {
+                                game.clickedTower(2);
+                            });
+                            $('#tower3').click(function () {
+                                game.clickedTower(3);
+                            });
+
+                        };
+
+
+
+
+                    </script>
+                </div>
+            </div><!--/row-->
+
+            <footer>
+                <p></p>
+            </footer>
+
+        </div> <!-- /container -->
+
+</body>
 </html>
