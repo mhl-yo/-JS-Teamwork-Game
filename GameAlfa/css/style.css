@@ -16,9 +16,20 @@
 
     #towers {
         position: relative;
-        top: 330px;
-        left: 270px;
+        top: 295px;
+        left: 280px;
 
+    }
+    .goldWindow{
+        position: relative;
+        bottom: 470px;
+        left: 0;
+    }
+
+    .livesWindow{
+        position: relative;
+        bottom: 525px;
+        left: 720px;
     }
 }
 
@@ -41,9 +52,57 @@
 
     #towers {
         position: relative;
-        top: 300px;
-        left: 130px;
+        top: 260px;
+        left: 150px;
+
+    }
+    .goldWindow{
+        position: relative;
+        bottom: 470px;
+        left: 0px;
+    }
+
+    .livesWindow{
+        position: relative;
+        bottom: 525px;
+        left: 720px;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+    body {
+        background-image: url("../images/background_900.jpg");
+        background-repeat: no-repeat;
+        background-size: 1000px 900px;
+        width: 900px;
+        height: 600px;
+
 
     }
 
+    #game1 {
+        position: absolute;
+        top: 110px;
+        left: 45px;
+
+    }
+
+    #towers {
+        position: relative;
+        top: 250px;
+        left: 40px;
+
+    }
+    .goldWindow{
+        position: relative;
+        bottom: 470px;
+        left: 0;
+    }
+
+    .livesWindow{
+        position: relative;
+        bottom: 525px;
+        left: 720px;
+    }
 }
