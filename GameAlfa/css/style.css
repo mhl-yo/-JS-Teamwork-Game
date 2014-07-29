@@ -1,7 +1,7 @@
 @media screen and (max-width: 1920px) {
     body {
-        width: 1920px;
-        height: 1080px;
+        width: 600px;
+        height: 600px;
         background-image: url("../images/Background_title.jpg");
         background-repeat: no-repeat;
         background-size: 1920px 1080px;
@@ -33,7 +33,7 @@
     }
 }
 
-@media screen and (max-width: 1360px){
+@media screen and (max-width: 1366px){
 
     body {
         width: 1360px;
@@ -75,8 +75,8 @@
         background-image: url("../images/background_900.jpg");
         background-repeat: no-repeat;
         background-size: 1000px 900px;
-        width: 900px;
-        height: 600px;
+        width: 175px;
+        height: 150px;
 
 
     }
