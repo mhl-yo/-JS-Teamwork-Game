@@ -1,0 +1,49 @@
+@media screen and (max-width: 1920px) {
+    body {
+        width: 1920px;
+        height: 1080px;
+        background-image: url("../images/Background_title.jpg");
+        background-repeat: no-repeat;
+        background-size: 1920px 1080px;
+    }
+
+    #game1 {
+        position: absolute;
+        top: 200px;
+        left: 540px;
+
+    }
+
+    #towers {
+        position: relative;
+        top: 330px;
+        left: 270px;
+
+    }
+}
+
+@media screen and (max-width: 1360px){
+
+    body {
+        width: 1360px;
+        height: 768px;
+        background-image: url("../images/background1360x768.jpg");
+        background-repeat: no-repeat;
+        background-size: 1360px 768px;
+    }
+
+    #game1 {
+        position: absolute;
+        top: 130px;
+        left: 270px;
+
+    }
+
+    #towers {
+        position: relative;
+        top: 300px;
+        left: 130px;
+
+    }
+
+}
