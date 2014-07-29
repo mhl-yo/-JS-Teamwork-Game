@@ -36,11 +36,11 @@
 @media screen and (max-width: 1366px){
 
     body {
-        width: 1360px;
+        width: 1366px;
         height: 768px;
         background-image: url("../images/background1360x768.jpg");
         background-repeat: no-repeat;
-        background-size: 1360px 768px;
+        background-size: 1366px 768px;
     }
 
     #game1 {
