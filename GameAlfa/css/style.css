@@ -1,45 +1,157 @@
-body {
-    background-image: url("../images/background1360x768.jpg");
-    background-repeat: no-repeat;
-    background-size: 1366px 800px;
+@media screen and (max-width: 1920px){
+    body {
+        background-image: url("../images/background_1920.jpg");
+        background-repeat: no-repeat;
+        background-size: 1920px 968px;
 
+    }
+
+    .container {
+
+        margin-top: 50px;
+        margin-left: 375px;
+    }
+
+    #game1 {
+        margin-top: 90px;
+        margin-left: 170px;
+    }
+
+    #towers {
+        display: inline-block;
+        float: left;
+        margin-left: 220px;
+    }
+
+    .status {
+        display: inline-block;
+        float: right;
+        margin-right: 150px;
+        margin-top: 20px;
+    }
+
+    #su {
+
+        position: absolute;
+        top: 350px;
+        left: 285px;
+        width: 260px;
+        z-index: 0;
+
+    }
+
+    #softuni {
+        position: absolute;
+        top: 350px;
+        left: 1445px;
+        width: 212px;
+        z-index: 0;
+    }
 }
-.container {
 
-    margin-left: 85px;
+
+
+@media screen and (max-width: 1366px) {
+    body {
+        background-image: url("../images/background1360x768.jpg");
+        background-repeat: no-repeat;
+        background-size: 1366px 800px;
+
+    }
+
+    .container {
+
+        margin-left: 85px;
+    }
+
+    #game1 {
+        margin-top: 90px;
+        margin-left: 170px;
+    }
+
+    #towers {
+        display: inline-block;
+        float: left;
+        margin-left: 220px;
+    }
+
+    .status {
+        display: inline-block;
+        float: right;
+        margin-right: 150px;
+        margin-top: 20px;
+    }
+
+    #su {
+
+        position: absolute;
+        top: 282px;
+        left: -5px;
+        width: 260px;
+        z-index: 0;
+
+    }
+
+    #softuni {
+        position: absolute;
+        top: 280px;
+        left: 1154px;
+        width: 212px;
+        z-index: 0;
+    }
 }
 
-#game1 {
-    margin-top: 90px;
-    margin-left: 170px;
-}
+@media screen and (max-width: 1000px){
+    body {
+        background: #000000;
 
-#towers {
-    display: inline-block;
-    float: left;
-    margin-left: 220px;
-}
-.status{
-    display: inline-block;
-    float: right;
-    margin-right: 150px;
-    margin-top: 20px;
-}
 
-#su{
+    }
 
-    position: absolute;
-    top: 282px;
-    left: -5px;
-    width: 260px;
-    z-index: 0;
+    .container {
+        background-image: url("../images/background_900.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
 
-}
+        margin-top: 0px;
+        margin-left: 0px;
+    }
 
-#softuni{
-    position: absolute;
-    top: 280px;
-    left: 1154px;
-    width: 212px;
-    z-index: 0;
+    #game1 {
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+
+    #towers {
+        display: inline-block;
+        float: left;
+        margin-left: 220px;
+    }
+
+    .status {
+        display: inline-block;
+        float: right;
+        margin-right: 150px;
+        margin-top: 20px;
+    }
+
+    #su {
+
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: 260px;
+        z-index: 0;
+        display: none;
+
+    }
+
+    #softuni {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: 212px;
+        z-index: 0;
+        display: none;
+    }
 }
