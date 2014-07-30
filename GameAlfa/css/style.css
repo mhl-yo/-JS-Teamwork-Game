@@ -12,10 +12,19 @@
         margin-left: 375px;
     }
 
+    #hidden{
+        display:none;
+    }
+
+#startOverlay{
+    text-align: center;
+    height: 25px;
+}
     #game1 {
         margin-top: 90px;
         margin-left: 170px;
-        display: none;
+        height: 505px;
+        display:none;
     }
 
     #towers {

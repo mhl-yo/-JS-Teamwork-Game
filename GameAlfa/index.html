@@ -70,6 +70,7 @@
                 <div id="game1">
                     
                 </div>
+                <div  id="hidden">
                 <div id="towersTwo">
 
                     <div id="towers">
@@ -114,7 +115,7 @@
                             </div>
                         </div>
 
-
+ <h3 id="errorMesssage" style="color:red"></h3>
                     </div>
 
                     <div class="status">
@@ -122,7 +123,7 @@
                         <span style="font-size:30px; padding-left:5px;">Gold - </span>
                         <span id="gold" style="font-size:30px; padding-left:5px;"></span>
                         </div>
-                        <div class="life-background">
+                        <div class="life-background ">
                         <span style="font-size:30px; padding-left:5px;">Lifes - </span>
                         <span id="lifes" style="font-size:30px; padding-left:5px;">0</span>
                         </div>
@@ -130,7 +131,7 @@
 
                     <img src="images/SU.jpg" alt="SU" id="su" />
                     <img src="images/softUni.jpg" alt="SotUni" id="softuni"/>
-
+                  </div>
                     <br>
 
 
@@ -144,11 +145,11 @@
 
 
                             $('#startGame').click(function(){
-                                $('#su, #game1, #softuni').fadeIn(2000);
+                                $('#su, #game1, #softuni, #hidden').fadeIn(2000);
                                 $('#startOverlay')
                                 .animate({
       left:'250px',
-      opacity:'0.5',
+      opacity:'0',
       height:'1px',
       width:'150px'
     });
