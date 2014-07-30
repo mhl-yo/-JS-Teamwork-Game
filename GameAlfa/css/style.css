@@ -5,7 +5,7 @@ body {
 
 }
 .container {
-   
+
     margin-left: 85px;
 }
 
@@ -24,4 +24,22 @@ body {
     float: right;
     margin-right: 150px;
     margin-top: 20px;
+}
+
+#su{
+
+    position: absolute;
+    top: 282px;
+    left: -5px;
+    width: 260px;
+    z-index: 0;
+
+}
+
+#softuni{
+    position: absolute;
+    top: 280px;
+    left: 1154px;
+    width: 212px;
+    z-index: 0;
 }
