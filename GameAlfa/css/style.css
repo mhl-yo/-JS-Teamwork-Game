@@ -15,6 +15,7 @@
     #game1 {
         margin-top: 90px;
         margin-left: 170px;
+        display: none;
     }
 
     #towers {
@@ -37,7 +38,7 @@
         left: 408px;
         width: 260px;
         z-index: 0;
-
+        display: none;
     }
 
     #softuni {
@@ -46,6 +47,7 @@
         left: 1418px;
         width: 212px;
         z-index: 0;
+        display: none;
     }
 
     .towerOne, .towerTwo, .towerTree{
