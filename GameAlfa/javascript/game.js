@@ -4,7 +4,7 @@ function Game(){
 	
 	
 	
-	this.wavesCount = 6;
+	this.wavesCount = 16;
 	this.wavesCreated = 0;
 
 	this.waves = [];
@@ -27,12 +27,12 @@ function Game(){
 	this.coordCells = [];
 
 	this.lifes=10;
-	this.gold=120;
+	this.gold=150;
 	
 	
 	// var gold = 120;  // Private variable 
 
-	this.gold = 120;  // Public variable 
+	this.gold = 150;  // Public variable 
 
 	this.gameRunning = true;
 
@@ -345,6 +345,7 @@ Game.prototype.looseLife = function(){
 };
 
 Game.prototype.run = function() {
+
     if (!this.gameIsStarted) {
         this.createWave();
         this.gameIsStarted = true;

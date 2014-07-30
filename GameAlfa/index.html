@@ -170,7 +170,7 @@
                                     game.clickedTower(3);
                                 });
 
-                                game.run();
+                               setTimeout(function(){game.run()}, 5000 ) ;
                                 $(this).html('Game Started');
                                 $(this).attr('disabled','disabled');
                             });
