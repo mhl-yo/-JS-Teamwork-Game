@@ -8,9 +8,9 @@ function Tower_3(game){
 	this.interval = null;
 	this.width = 50;
 	this.height = 50;
-	this.reloadInterval = 2000;
+	this.reloadInterval = 4000;
 	this.lastFired = 0;
-	this.damage = 35;
+	this.damage = 40;
 	this.price = 180;
 }
 
@@ -49,6 +49,18 @@ Tower_3.prototype.fire = function(monster){
 		return;
 	}
 	this.lastFired = time;
+
+	var spit = new Image();
+
+	var circle = new Kinetic.Image({
+	    x: this.screenX,
+	    y: this.screenY,
+	    image: spit,
+	    width: 20,
+	    height: 20,
+	});
+	spit.src = 'images/spitPetq.png';
+    /*
 	var circle = new Kinetic.Circle({
 	  radius: 12,
 	  fill: 'red',
@@ -56,7 +68,7 @@ Tower_3.prototype.fire = function(monster){
 	  x : this.screenX,
 	  y : this.screenY
 	});
-	
+	*/
 	this.game.layer.add(circle);
 	
 	var tween = new Kinetic.Tween({

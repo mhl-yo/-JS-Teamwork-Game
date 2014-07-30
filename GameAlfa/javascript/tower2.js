@@ -50,14 +50,26 @@ Tower_2.prototype.fire = function(monster){
 		return;
 	}
 	this.lastFired = time;
+
+	var spit = new Image();
+
+	var circle = new Kinetic.Image({
+	    x: this.screenX,
+	    y: this.screenY,
+	    image: spit,
+	    width: 20,
+	    height: 20,
+	});
+	spit.src = 'images/vladiSpit.png';
+    /*
 	var circle = new Kinetic.Circle({
-	  radius: 8,
-	  fill: 'blue',
+	  radius: 10,
+	  fill: '',
 	  stroke: 'blue',
 	  x : this.screenX,
 	  y : this.screenY
 	});
-	
+	*/
 	this.game.layer.add(circle);
 	
 	var tween = new Kinetic.Tween({
