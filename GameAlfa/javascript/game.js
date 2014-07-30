@@ -35,6 +35,8 @@ function Game(){
 	this.gold = 120;  // Public variable 
 
 	this.gameRunning = true;
+
+    this.gameIsStarted = false;
 	
 }
 
@@ -104,7 +106,7 @@ Game.prototype.initLevel = function(){
 	  
 	  
 	  
-	  this.createWave();
+
 	
 	$('#gold').html(this.gold);
 	$('#lifes').html(this.lifes);
@@ -322,3 +324,13 @@ Game.prototype.looseLife = function(){
 	}
 	$('#lifes').html(this.lifes);
 };
+
+Game.prototype.run = function() {
+    if (!this.gameIsStarted) {
+        this.createWave();
+        this.gameIsStarted = true;
+    } else {
+        return false;
+    }
+
+}
