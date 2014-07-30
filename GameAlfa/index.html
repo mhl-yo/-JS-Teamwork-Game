@@ -65,7 +65,11 @@
 
 
 
-                <div id="game1"></div>
+                <div id="game1">
+                    <div id="startOverlay" style="width: 1000px; height: 505px; background-color: #000;">
+                        <button type="button" id="startGame">Start</button>
+                    </div>
+                </div>
                 <div id="towersTwo">
 
                     <div id="towers">
@@ -96,32 +100,34 @@
 
 
 
-                    <button type="button" id="startGame">Start</button>
+
                     <br style="clear:both" />
 
                     <script>
 
                         window.onload = function () {
-                            var game = new Game();
 
-
-                            game.init({ "backgroundUrl": "images/background1.png", "monster1Url": "images/darthvader.png", "monster2Url": "images/ironman.png", "monster3Url": "images/hulk.png", "tower1Url": "images/tower1icon.png", "tower2Url": "images/tower2icon.png", "tower3Url": "images/tower3icon.png", "route": [{ "x": 1, "y": 6 }, { "x": 2, "y": 6 }, { "x": 3, "y": 6 }, { "x": 3, "y": 5 }, { "x": 3, "y": 4 }, { "x": 3, "y": 3 }, { "x": 4, "y": 3 }, { "x": 5, "y": 3 }, { "x": 6, "y": 3 }, { "x": 7, "y": 3 }, { "x": 7, "y": 4 }, { "x": 7, "y": 5 }, { "x": 7, "y": 6 }, { "x": 7, "y": 7 }, { "x": 8, "y": 7 }, { "x": 9, "y": 7 }, { "x": 10, "y": 7 }, { "x": 11, "y": 7 }, { "x": 11, "y": 6 }, { "x": 11, "y": 5 }, { "x": 12, "y": 5 }, { "x": 13, "y": 5 }, { "x": 14, "y": 5 }, { "x": 15, "y": 5 }, { "x": 16, "y": 5 }, { "x": 17, "y": 5 }], "monsterType": 1 }, 'game1');
-
-                            $('#tower1').click(function () {
-                                game.clickedTower(1);
-                            });
-                            $('#tower2').click(function () {
-                                game.clickedTower(2);
-                            });
-                            $('#tower3').click(function () {
-                                game.clickedTower(3);
-                            });
 
                             $('#startGame').click(function(){
+                                $('#startOverlay').hide();
+                                var game = new Game();
+
+                                game.init({ "backgroundUrl": "images/background1.png", "monster1Url": "images/darthvader.png", "monster2Url": "images/ironman.png", "monster3Url": "images/hulk.png", "tower1Url": "images/tower1icon.png", "tower2Url": "images/tower2icon.png", "tower3Url": "images/tower3icon.png", "route": [{ "x": 1, "y": 6 }, { "x": 2, "y": 6 }, { "x": 3, "y": 6 }, { "x": 3, "y": 5 }, { "x": 3, "y": 4 }, { "x": 3, "y": 3 }, { "x": 4, "y": 3 }, { "x": 5, "y": 3 }, { "x": 6, "y": 3 }, { "x": 7, "y": 3 }, { "x": 7, "y": 4 }, { "x": 7, "y": 5 }, { "x": 7, "y": 6 }, { "x": 7, "y": 7 }, { "x": 8, "y": 7 }, { "x": 9, "y": 7 }, { "x": 10, "y": 7 }, { "x": 11, "y": 7 }, { "x": 11, "y": 6 }, { "x": 11, "y": 5 }, { "x": 12, "y": 5 }, { "x": 13, "y": 5 }, { "x": 14, "y": 5 }, { "x": 15, "y": 5 }, { "x": 16, "y": 5 }, { "x": 17, "y": 5 }], "monsterType": 1 }, 'game1');
+
+                                $('#tower1').click(function () {
+                                    game.clickedTower(1);
+                                });
+                                $('#tower2').click(function () {
+                                    game.clickedTower(2);
+                                });
+                                $('#tower3').click(function () {
+                                    game.clickedTower(3);
+                                });
+
                                 game.run();
                                 $(this).html('Game Started');
                                 $(this).attr('disabled','disabled');
-                            })
+                            });
                         };
 
 
