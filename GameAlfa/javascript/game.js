@@ -37,7 +37,7 @@ function Game(){
 	this.gameRunning = true;
 
     this.gameIsStarted = false;
-	
+	this.towerLocations = new Array();
 }
 
 
@@ -263,7 +263,24 @@ Game.prototype.clickedTower =function(towerId){
 						return false;
 					}
 				}
+
+
+                for(var j = 0; j < self.towerLocations.length; j++)
+                {
+                    var currentTower = self.towerLocations[j];
+
+                    if(gameCoords.x == currentTower[0] && gameCoords.y == currentTower[1])
+                    {
+                        console.info('No MORON!!!');
+                        return false;
+                    }
+                }
+
 				self.placeTower(towerId, position.x, position.y);
+
+                //saving positions of last added tower
+                self.towerLocations.push([gameCoords.x, gameCoords.y]);
+
 				for(i = 0; i < self.coordCells.length; i++){
 					self.coordCells[i].off('click');
 					self.coordCells[i].off('mouseover');
@@ -276,7 +293,9 @@ Game.prototype.clickedTower =function(towerId){
 };
 
 
-Game.prototype.placeTower =function(towerId, x, y){
+Game.prototype.placeTower = function(towerId, x, y){
+
+
 	var tower;
 	if (towerId == 1) {
 		tower = new Tower_1(this);
