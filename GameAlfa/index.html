@@ -128,7 +128,7 @@
                         </div>
                     </div>
 
-                    <img src="images/SU.jpg" alt="SU" id="su"/>
+                    <img src="images/SU.jpg" alt="SU" id="su" style="display:none;"/>
                     <img src="images/softUni.jpg" alt="SotUni" id="softuni"/>
 
                     <br>
@@ -144,6 +144,7 @@
 
 
                             $('#startGame').click(function(){
+                                $('#su').fadeIn();
                                 $('#startOverlay').animate({
       left:'250px',
       opacity:'0.5',
