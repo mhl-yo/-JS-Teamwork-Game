@@ -338,6 +338,7 @@ Game.prototype.looseLife = function(){
 	this.lifes--;
 	if(this.lifes === 0){
 		$('#startOverlay').html('GAME OVER!');
+		$('#startOverlay').css({"color":"red","font-size":"600%", "padding-top":"200px"});
 		$('#su, #game1, #softuni, #hidden, #footer').fadeOut(2000);
 		 $('#startOverlay')
                             .animate({
