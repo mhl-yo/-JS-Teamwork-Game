@@ -26,7 +26,7 @@ function Game(){
 	this.levelInfo = {};
 	this.coordCells = [];
 
-	this.lifes=10;
+	this.lifes=1;
 	this.gold=150;
 	
 	
@@ -137,7 +137,7 @@ Game.prototype.createWave = function(){
 	var wave = new Wave(monsterType, this.levelInfo.route, this);
 	
 	if(this.wavesCreated > this.wavesCount){
-		alert('YOU WIN');
+		$('#errorMesssage').html('YOU WIN');
 		this.gameRunnig = false;
 		return;
 	}
@@ -311,7 +311,7 @@ Game.prototype.placeTower = function(towerId, x, y){
 		$('#errorMesssage').html('Not enough gold');
 		setTimeout(function(){
 			$('#errorMesssage').html('');
-		}, 1500);
+		}, 2500);
 		return;
 	}
 	
@@ -337,7 +337,17 @@ Game.prototype.gameToScreenCoords =function(x, y){
 Game.prototype.looseLife = function(){
 	this.lifes--;
 	if(this.lifes === 0){
-		alert('GAME OVER!');
+		$('#startOverlay').html('GAME OVER!');
+		$('#su, #game1, #softuni, #hidden, #footer').fadeOut(2000);
+		 $('#startOverlay')
+                            .animate({
+                                opacity: '1',
+                                height: '500px'
+                            }, 3000);
+
+
+
+
 		this.gameRunning = false;
 		return;
 	}
@@ -355,32 +365,3 @@ Game.prototype.run = function() {
 
 };
 
-Game.prototype.updateStatus = function(){
-	// update all the status variables
-	var cash = document.getElementById("cash");
-	cash.innerHTML = "$" + this.gold;
- 
-	var score = document.getElementById("score");
-	score.innerHTML = currentScore;
- 
-	var wave = document.getElementById("wave");
-	wave.innerHTML = currentWave;
- 
-	var lives = document.getElementById("lives");
-	lives.innerHTML = currentLives;
- 
-	// highlight turrets we can purchase
-	var turrets = document.getElementsByClassName("turret");
-	for(var i = 0; i < turrets.length; i++)
-	{
-		if(currentCash >= turretValue(turrets[i].id))
-		{
-			turrets[i].style.opacity = 1;
-		}
-		else
-		{
-			turrets[i].style.opacity = 0.5;			
-		}
-	}
-
-}

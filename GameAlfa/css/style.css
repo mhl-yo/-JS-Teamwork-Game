@@ -98,9 +98,11 @@
     }
 
     #errorMesssage{
-        position: absolute;
-        top: 630px;
-        left: 600px;
+        display: inline-block;
+        padding: 0 50px;
+        font-size: 26px;
+        font-weight: 900;
+        color:#fff;
     }
 
 
