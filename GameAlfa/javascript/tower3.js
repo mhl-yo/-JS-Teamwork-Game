@@ -4,13 +4,13 @@
 function Tower_3(game){
 	this.game = game;
 	this.layer = game.towersLayer;
-	this.range = 120;
+	this.range = 200;
 	this.interval = null;
 	this.width = 50;
 	this.height = 50;
 	this.reloadInterval = 4000;
 	this.lastFired = 0;
-	this.damage = 40;
+	this.damage = 50;
 	this.price = 180;
 }
 
