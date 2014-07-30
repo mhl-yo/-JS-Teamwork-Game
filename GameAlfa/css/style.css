@@ -67,24 +67,24 @@
         color: #ffffff;
         display: none;
         position: absolute;
-        top: 770px;
-        left: 600px;
+        top: 630px;
+        left: 580px;
     }
 
     .towerTwoProp{
         color: #ffffff;
         display: none;
         position: absolute;
-        top: 770px;
-        left: 650px;
+        top: 630px;
+        left: 630px;
     }
 
     .towerTreeProp{
         color: #ffffff;
         display: none;
         position: absolute;
-        top: 770px;
-        left: 700px;
+        top: 630px;
+        left: 680px;
     }
 
     .towerOne:hover .towerOneProp {
@@ -95,6 +95,12 @@
     }
     .towerTree:hover .towerTreeProp{
         display: block;
+    }
+
+    #errorMesssage{
+        position: absolute;
+        top: 630px;
+        left: 600px;
     }
 
 
@@ -163,19 +169,19 @@
 
     .towerOneProp {
         position: absolute;
-        top: 650px;
+        top: 630px;
         left: 285px;
     }
 
     .towerTwoProp{
         position: absolute;
-        top: 650px;
+        top: 630px;
         left: 335px;
     }
 
     .towerTreeProp{
         position: absolute;
-        top: 650px;
+        top: 630px;
         left: 385px;
     }
 
@@ -187,6 +193,12 @@
     }
     .towerTree:hover .towerTreeProp{
         display: block;
+    }
+
+    #errorMesssage{
+        position: absolute;
+        top: 630px;
+        left: 300px;
     }
 }
 
@@ -202,8 +214,8 @@
         background-size: 100%;
         background-repeat: no-repeat;
 
-        margin-top: 0px;
-        margin-left: 0px;
+        margin-top: 0;
+        margin-left: 0;
     }
 
     #game1 {
@@ -257,19 +269,19 @@
 
     .towerOneProp {
         position: absolute;
-        top: 630px;
+        top: 610px;
         left: 215px;
     }
 
     .towerTwoProp{
         position: absolute;
-        top: 630px;
+        top: 610px;
         left: 265px;
     }
 
     .towerTreeProp{
         position: absolute;
-        top: 630px;
+        top: 610px;
         left: 315px;
     }
 
@@ -282,7 +294,16 @@
     .towerTree:hover .towerTreeProp{
         display: block;
     }
+
+    #errorMesssage{
+        position: absolute;
+        top: 600px;
+        left: 200px;
+    }
 }
+
+
+
 footer {
     width: 100%;
     height: 50px;
