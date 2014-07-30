@@ -26,7 +26,7 @@ function Game(){
 	this.levelInfo = {};
 	this.coordCells = [];
 
-	this.lifes=1;
+	this.lifes=10;
 	this.gold=150;
 	
 	
@@ -337,14 +337,10 @@ Game.prototype.gameToScreenCoords =function(x, y){
 Game.prototype.looseLife = function(){
 	this.lifes--;
 	if(this.lifes === 0){
-		$('#startOverlay').html('GAME OVER!');
-		$('#startOverlay').css({"color":"red","font-size":"600%", "padding-top":"200px"});
+		$('#startGame').html('Start New Game!');
+		$('#endGame').html('GAME OVER!');
 		$('#su, #game1, #softuni, #hidden, #footer').fadeOut(2000);
-		 $('#startOverlay')
-                            .animate({
-                                opacity: '1',
-                                height: '500px'
-                            }, 3000);
+		$('#startOverlay').animate({opacity: '1',height: '500px'}, 4000);
 
 
 
