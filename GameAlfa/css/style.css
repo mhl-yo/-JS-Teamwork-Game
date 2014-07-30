@@ -301,3 +301,11 @@ li img {
     background-image: url(../images/Life.png);
     color: white;
 }
+.fb {
+    padding-bottom: 5px;
+    border: 1px solid black;
+    background-color: #5079d3;
+}
+.fb:hover {
+    border: 1px solid orange;
+}
