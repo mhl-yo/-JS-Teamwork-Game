@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -18,7 +19,7 @@
     <link href="css/bootstrap.min.css?body=1" media="all" rel="stylesheet" />
     <link href="css/password_resets.css?body=1" media="all" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
 
 
     <script src="javascript/jquery.js?body=1"></script>
@@ -41,6 +42,7 @@
     <script src="javascript/application.js?body=1"></script>
     <style></style>
 </head>
+
 <body>
     <!-- Static navbar -->
     <div class="navbar navbar-default" role="navigation">
@@ -56,8 +58,10 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav"></ul>
-            </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+        <!--/.container-fluid -->
     </div>
     <div class="container">
         <div class="row">
@@ -65,133 +69,229 @@
 
 
                 <div id="startOverlay" style="width: 1000px; height: 505px; ">
-                 <button type="button" id="startGame">Start</button>
-                 </div>
+                    <button type="button" id="startGame">Start</button>
+                </div>
                 <div id="game1">
-                    
+
                 </div>
-                <div  id="hidden">
-                <div id="towersTwo">
+                <div id="hidden">
+                    <div id="towersTwo">
 
-                    <div id="towers">
-                        <br/>
+                        <div id="towers">
+                            <br/>
 
-                        <div class="towerOne">
-                            <img id="tower1" src="images/tower1icon.png" width="50" height="50" />
-                            <div class="towerOneProp">
-                                <span>Price - 50</span>
-                                <br/>
-                                <span>Damage - 13</span>
-                                <br/>
-                                <span>Fire rate - Fast</span>
-                                <br/>
-                                <span>Range - 120</span>
+                            <div class="towerOne">
+                                <img id="tower1" src="images/tower1icon.png" width="50" height="50" />
+                                <div class="towerOneProp">
+                                    <span>Price - 50</span>
+                                    <br/>
+                                    <span>Damage - 13</span>
+                                    <br/>
+                                    <span>Fire rate - Fast</span>
+                                    <br/>
+                                    <span>Range - 120</span>
+                                </div>
+                            </div>
+
+                            <div class="towerTwo">
+                                <img id="tower2" src="images/tower2icon.png" width="50" height="50" />
+                                <div class="towerTwoProp">
+                                    <span>Price - 80</span>
+                                    <br/>
+                                    <span>Damage - 20</span>
+                                    <br/>
+                                    <span>Fire rate - Normal</span>
+                                    <br/>
+                                    <span>Range - 150</span>
+                                </div>
+                            </div>
+
+                            <div class="towerTree">
+                                <img id="tower3" src="images/tower3icon.png" width="50" height="50" />
+                                <div class="towerTreeProp">
+                                    <span>Price - 150</span>
+                                    <br/>
+                                    <span>Damage - 100</span>
+                                    <br/>
+                                    <span>Fire rate - Very Slow</span>
+                                    <br/>
+                                    <span>Range - 250</span>
+                                </div>
+                            </div>
+                            <div id="cash">111</div>
+
+
+                            <h3 id="errorMesssage" style="color:red"></h3>
+
+                            <h3 id="errorMesssage" style="color:red"></h3>
+                        </div>
+
+                        <div class="status">
+                            <div class="gold-background">
+                                <span style="font-size:30px; padding-left:5px;">Gold -</span>
+                                <span id="gold" style="font-size:30px; padding-left:5px;"></span>
+                            </div>
+                            <div class="life-background ">
+                                <span style="font-size:30px; padding-left:5px;">Lifes -</span>
+                                <span id="lifes" style="font-size:30px; padding-left:5px;">0</span>
                             </div>
                         </div>
 
-                        <div class="towerTwo">
-                            <img id="tower2" src="images/tower2icon.png" width="50" height="50" />
-                            <div class="towerTwoProp">
-                                <span>Price - 80</span>
-                                <br/>
-                                <span>Damage - 20</span>
-                                <br/>
-                                <span>Fire rate - Normal</span>
-                                <br/>
-                                <span>Range - 150</span>
-                            </div>
-                        </div>
-
-                        <div class="towerTree">
-                            <img id="tower3" src="images/tower3icon.png" width="50" height="50" />
-                            <div class="towerTreeProp">
-                                <span>Price - 150</span>
-                                <br/>
-                                <span>Damage - 100</span>
-                                <br/>
-                                <span>Fire rate - Very Slow</span>
-                                <br/>
-                                <span>Range - 250</span>
-                            </div>
-                        </div>
-                        
-                        <h3 id="errorMesssage" style="color:red"></h3>
-
- <h3 id="errorMesssage" style="color:red"></h3>
+                        <img src="images/SU.jpg" alt="SU" id="su" />
+                        <img src="images/softUni.jpg" alt="SotUni" id="softuni" />
                     </div>
-
-                    <div class="status">
-                       <div class="gold-background">
-                        <span style="font-size:30px; padding-left:5px;">Gold - </span>
-                        <span id="gold" style="font-size:30px; padding-left:5px;"></span>
-                        </div>
-                        <div class="life-background ">
-                        <span style="font-size:30px; padding-left:5px;">Lifes - </span>
-                        <span id="lifes" style="font-size:30px; padding-left:5px;">0</span>
-                        </div>
-                    </div>
-
-                    <img src="images/SU.jpg" alt="SU" id="su" />
-                    <img src="images/softUni.jpg" alt="SotUni" id="softuni"/>
-                  </div>
-                    <br>
-
-
-
-
-                    <br style="clear:both" />
-
-                    <script>
-
-                        window.onload = function () {
-
-
-                            $('#startGame').click(function(){
-                                $('#su, #game1, #softuni, #hidden').fadeIn(2000);
-                                $('#startOverlay')
-                                .animate({
-      left:'250px',
-      opacity:'0',
-      height:'1px',
-      width:'150px'
-    });
-
-                                var game = new Game();
-
-                                game.init({ "backgroundUrl": "images/background1.png", "monster1Url": "images/darthvader.png", "monster2Url": "images/ironman.png", "monster3Url": "images/hulk.png", "tower1Url": "images/tower1icon.png", "tower2Url": "images/tower2icon.png", "tower3Url": "images/tower3icon.png", "route": [{ "x": 1, "y": 6 }, { "x": 2, "y": 6 }, { "x": 3, "y": 6 }, { "x": 3, "y": 5 }, { "x": 3, "y": 4 }, { "x": 3, "y": 3 }, { "x": 4, "y": 3 }, { "x": 5, "y": 3 }, { "x": 6, "y": 3 }, { "x": 7, "y": 3 }, { "x": 7, "y": 4 }, { "x": 7, "y": 5 }, { "x": 7, "y": 6 }, { "x": 7, "y": 7 }, { "x": 8, "y": 7 }, { "x": 9, "y": 7 }, { "x": 10, "y": 7 }, { "x": 11, "y": 7 }, { "x": 11, "y": 6 }, { "x": 11, "y": 5 }, { "x": 12, "y": 5 }, { "x": 13, "y": 5 }, { "x": 14, "y": 5 }, { "x": 15, "y": 5 }, { "x": 16, "y": 5 }, { "x": 17, "y": 5 }], "monsterType": 1 }, 'game1');
-
-                                $('#tower1').click(function () {
-                                    game.clickedTower(1);
-                                });
-                                $('#tower2').click(function () {
-                                    game.clickedTower(2);
-                                });
-                                $('#tower3').click(function () {
-                                    game.clickedTower(3);
-                                });
-
-                               setTimeout(function(){game.run()}, 5000 ) ;
-                                $(this).html('Game Started');
-                                $(this).attr('disabled','disabled');
-                            });
-                        };
-
-
-
-
-                    </script>
                 </div>
-            </div><!--/row-->
-        </div> <!-- /container -->
-                    <footer>
-                <ul>
-                    <li><img src="images/kaska.jpg" />Kaloian "kasskata" Anastasov </li>
-                    <li><img src="images/ewstati.jpg" />Evstati Zarkov</li>
-                    <li><img src="images/lubo.jpg" />Luboslav Pirsafov</li>
-                    <li><img src="images/mike.jpg" />Mihail Yotov</li>
-                    <li class="fb">
-                    <a title="Facebook" target="_blank" href="https://www.facebook.com/pages/Epic-Turbo-Mega-Hyper-Defence/1501028293447783?fref=ts"><img alt="EpicTurboMegHyperDefence" src="images/facebook.png"></a>
-                            </li>
-            </footer>
+                <br>
+
+
+
+
+                <br style="clear:both" />
+
+                <script>
+                window.onload = function() {
+
+
+                    $('#startGame').click(function() {
+                        $('#su, #game1, #softuni, #hidden, #footer').fadeIn(6000);
+                        $('#startOverlay')
+                            .animate({
+                                opacity: '0',
+                                height: '0px'
+                            }, 2000);
+
+                        var game = new Game();
+
+                        game.init({
+                            "backgroundUrl": "images/background1.png",
+                            "monster1Url": "images/darthvader.png",
+                            "monster2Url": "images/ironman.png",
+                            "monster3Url": "images/hulk.png",
+                            "tower1Url": "images/tower1icon.png",
+                            "tower2Url": "images/tower2icon.png",
+                            "tower3Url": "images/tower3icon.png",
+                            "route": [{
+                                "x": 1,
+                                "y": 6
+                            }, {
+                                "x": 2,
+                                "y": 6
+                            }, {
+                                "x": 3,
+                                "y": 6
+                            }, {
+                                "x": 3,
+                                "y": 5
+                            }, {
+                                "x": 3,
+                                "y": 4
+                            }, {
+                                "x": 3,
+                                "y": 3
+                            }, {
+                                "x": 4,
+                                "y": 3
+                            }, {
+                                "x": 5,
+                                "y": 3
+                            }, {
+                                "x": 6,
+                                "y": 3
+                            }, {
+                                "x": 7,
+                                "y": 3
+                            }, {
+                                "x": 7,
+                                "y": 4
+                            }, {
+                                "x": 7,
+                                "y": 5
+                            }, {
+                                "x": 7,
+                                "y": 6
+                            }, {
+                                "x": 7,
+                                "y": 7
+                            }, {
+                                "x": 8,
+                                "y": 7
+                            }, {
+                                "x": 9,
+                                "y": 7
+                            }, {
+                                "x": 10,
+                                "y": 7
+                            }, {
+                                "x": 11,
+                                "y": 7
+                            }, {
+                                "x": 11,
+                                "y": 6
+                            }, {
+                                "x": 11,
+                                "y": 5
+                            }, {
+                                "x": 12,
+                                "y": 5
+                            }, {
+                                "x": 13,
+                                "y": 5
+                            }, {
+                                "x": 14,
+                                "y": 5
+                            }, {
+                                "x": 15,
+                                "y": 5
+                            }, {
+                                "x": 16,
+                                "y": 5
+                            }, {
+                                "x": 17,
+                                "y": 5
+                            }],
+                            "monsterType": 1
+                        }, 'game1');
+
+                        $('#tower1').click(function() {
+                            game.clickedTower(1);
+                        });
+                        $('#tower2').click(function() {
+                            game.clickedTower(2);
+                        });
+                        $('#tower3').click(function() {
+                            game.clickedTower(3);
+                        });
+
+                        setTimeout(function() {
+                            game.run()
+                        }, 5000);
+                        $(this).html('Game Started');
+                        $(this).attr('disabled', 'disabled');
+                    });
+                };
+                </script>
+            </div>
+        </div>
+        <!--/row-->
+    </div>
+    <!-- /container -->
+    <footer id="footer">
+        <ul>
+            <li>
+                <img src="images/kaska.jpg" />Kaloian "kasskata" Anastasov</li>
+            <li>
+                <img src="images/ewstati.jpg" />Evstati Zarkov</li>
+            <li>
+                <img src="images/lubo.jpg" />Luboslav Pirsafov</li>
+            <li>
+                <img src="images/mike.jpg" />Mihail Yotov</li>
+            <li class="fb">
+                <a title="Facebook" target="_blank" href="https://www.facebook.com/pages/Epic-Turbo-Mega-Hyper-Defence/1501028293447783?fref=ts">
+                    <img alt="EpicTurboMegHyperDefence" src="images/facebook.png">
+                </a>
+            </li>
+          </ul>
+    </footer>
 </body>
+
 </html>

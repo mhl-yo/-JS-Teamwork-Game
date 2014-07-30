@@ -12,7 +12,7 @@
         margin-left: 375px;
     }
 
-    #hidden{
+    #hidden, #footer{
         display:none;
     }
 
