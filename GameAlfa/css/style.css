@@ -1,0 +1,27 @@
+body {
+    background-image: url("../images/background1360x768.jpg");
+    background-repeat: no-repeat;
+    background-size: 1366px 800px;
+
+}
+.container {
+   
+    margin-left: 85px;
+}
+
+#game1 {
+    margin-top: 90px;
+    margin-left: 170px;
+}
+
+#towers {
+    display: inline-block;
+    float: left;
+    margin-left: 220px;
+}
+.status{
+    display: inline-block;
+    float: right;
+    margin-right: 150px;
+    margin-top: 20px;
+}
