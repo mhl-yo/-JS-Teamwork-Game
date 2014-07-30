@@ -47,6 +47,47 @@
         width: 212px;
         z-index: 0;
     }
+
+    .towerOne, .towerTwo, .towerTree{
+        display: inline-block;
+    }
+
+    .towerOneProp {
+        color: #ffffff;
+        display: none;
+        position: absolute;
+        top: 770px;
+        left: 600px;
+    }
+
+    .towerTwoProp{
+        color: #ffffff;
+        display: none;
+        position: absolute;
+        top: 770px;
+        left: 650px;
+    }
+
+    .towerTreeProp{
+        color: #ffffff;
+        display: none;
+        position: absolute;
+        top: 770px;
+        left: 700px;
+    }
+
+    .towerOne:hover .towerOneProp {
+        display: block;
+    }
+    .towerTwo:hover .towerTwoProp{
+        display: block;
+    }
+    .towerTree:hover .towerTreeProp{
+        display: block;
+    }
+
+
+
 }
 
 
@@ -98,6 +139,43 @@
         left: 1154px;
         width: 212px;
         z-index: 0;
+    }
+
+    .towerOne, .towerTwo, .towerTree{
+        display: inline-block;
+    }
+
+    .towerOneProp, .towerTwoProp, .towerTreeProp{
+        color: #ffffff;
+        display: none;
+    }
+
+    .towerOneProp {
+        position: absolute;
+        top: 650px;
+        left: 285px;
+    }
+
+    .towerTwoProp{
+        position: absolute;
+        top: 650px;
+        left: 335px;
+    }
+
+    .towerTreeProp{
+        position: absolute;
+        top: 650px;
+        left: 385px;
+    }
+
+    .towerOne:hover .towerOneProp {
+        display: block;
+    }
+    .towerTwo:hover .towerTwoProp{
+        display: block;
+    }
+    .towerTree:hover .towerTreeProp{
+        display: block;
     }
 }
 
@@ -153,5 +231,42 @@
         width: 212px;
         z-index: 0;
         display: none;
+    }
+
+    .towerOne, .towerTwo, .towerTree{
+        display: inline-block;
+    }
+
+    .towerOneProp, .towerTwoProp, .towerTreeProp{
+        color: #ffffff;
+        display: none;
+    }
+
+    .towerOneProp {
+        position: absolute;
+        top: 630px;
+        left: 215px;
+    }
+
+    .towerTwoProp{
+        position: absolute;
+        top: 630px;
+        left: 265px;
+    }
+
+    .towerTreeProp{
+        position: absolute;
+        top: 630px;
+        left: 315px;
+    }
+
+    .towerOne:hover .towerOneProp {
+        display: block;
+    }
+    .towerTwo:hover .towerTwoProp{
+        display: block;
+    }
+    .towerTree:hover .towerTreeProp{
+        display: block;
     }
 }
