@@ -354,11 +354,11 @@ li img {
     background-image: url(../images/Life.png);
     color: white;
 }
-.fb {
-    padding-bottom: 5px;
-    border: 1px solid black;
-    background-color: #4862A3;
-}
-.fb:hover {
-    border: 1px solid orange;
+#footer > ul > li.fb > iframe {
+    background-color:white;
+    padding-left:10px;
+    padding-top:10px;
+    position:relative;
+    top: -81px;
+    left: -118px;
 }
